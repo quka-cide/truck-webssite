@@ -3,6 +3,8 @@
 :root {
     --gold: #C8A35F;
     --white: #FFF;
+    --gray: #393F47;
+    --dark: #2F343A;
 }
 
 * {
@@ -20,6 +22,8 @@ html {
 a {
     text-decoration: none;
 }
+
+
 
 /* First screen section */
 #first-screen .first-screen {
@@ -71,3 +75,111 @@ a {
     bottom: 50px;
 }
 /* End First screen section */
+/* Services section */
+#services .services {
+    height: 561px;
+    width: 100%;
+    background-color: var(--gray);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+
+
+#services .services__center {
+    width: 410px;
+    height: 561px;
+    background: var(--dark);
+    position: absolute;
+    top: 0;
+    left: auto;
+    z-index: -1;
+}
+
+
+
+#services .services__content-col-left {
+    height: 305px;
+    width: 445px;
+    margin-left: 30px;
+}
+
+#services .services__content-line {
+    width: 90px;
+    height: 6px;
+    background: var(--gold);
+    border: none;
+    margin-bottom: 40px;
+}
+
+#services .services__content-title {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 123.047%; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+#services .services__content-text {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 158.203%; 
+    margin-bottom: 50px;
+}
+
+#services .services__content-button {
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 158.203%; 
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 19px 48px;
+    background: var(--gold);
+}
+
+#services .services__content-img {
+    width: 445px;
+    height: 266px;
+    margin-left: 30px;
+}
+
+#services .services__content-container {
+    height: 285px;
+    width: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#services .services__content-arrow {
+    overflow: hidden;
+}
+
+#services .services__content-arrow span {
+    color: var(--gold);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 158.203%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+#services .services__content-arrow span:nth-child(1) {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+#services .services__content-arrow img {
+    display: inline-block;
+  vertical-align: middle;
+}
+/* End Services section */
